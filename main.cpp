@@ -1,5 +1,17 @@
 #include "skippy.h"
+#include <iostream> 
 
+
+int main(void)
+{
+    std::cout << "hello world\n"; 
+
+    skiplist s; 
+    s.insert(3); 
+    std::cout << s.contains(3) << "\n"; 
+
+    return 0; 
+}
 
 // v vague roadmap
 // single-threaded, locked, and lock-free skip lists //wait free?
